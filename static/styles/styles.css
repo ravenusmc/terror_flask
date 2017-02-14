@@ -1,0 +1,76 @@
+/* Generic CSS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00005D;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 80%;
+    min-width: 960px;
+    max-width: 1200px;
+    background-color: #B3C7E6;
+    color: #000066;
+}
+
+header {
+    background-color: #869DC7;
+    color: #00005D;
+    font-size: 150%;
+    padding: 10px 10px 10px 10px;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: #B3C7E6;
+    border-bottom: 1px solid #ffffff;
+}
+
+nav a:link {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #869DC7;
+    background-color: #EAEAEA;
+}
+
+main {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    display: block;
+    overflow: auto;
+}
+
+footer {
+    font-size: 70%
+    text-align: center;
+    padding: 10px;
+    background-color: #869DC7;
+    clear: both;
+}
