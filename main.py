@@ -20,7 +20,7 @@ def idea():
 
 @app.route('/right_wing')
 def right():
-    return render_template('idea.html', title='Right Wing Terrorism Info')
+    return render_template('right.html', title='Right Wing Terrorism Info')
 
 #This line will actually run the app.
 app.run(debug=True)
