@@ -13,5 +13,14 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', title='Home Page')
 
+#Code for pages dealing with ideology
+@app.route('/ideology')
+def idea():
+    return render_template('idea.html', title='Ideology Page')
+
+@app.route('/right_wing')
+def right():
+    return render_template('idea.html', title='Right Wing Terrorism Info')
+
 #This line will actually run the app.
 app.run(debug=True)
