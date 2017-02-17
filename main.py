@@ -21,15 +21,21 @@ def idea():
 
 @app.route('/right_wing')
 def right():
-    return render_template('right.html', title='Right Wing Terrorism Info')
+    ideology = Ideology()
+    total, right = ideology.right_wing_info()
+    return render_template('right.html', title='Right Wing Terrorism Info', total = total, right = right )
 
 @app.route('/left_wing')
 def left():
-    return render_template('left.html', title='Left Wing Terrorism Info')
+    ideology = Ideology()
+    total, left = ideology.left_wing_info()
+    return render_template('left.html', title='Left Wing Terrorism Info', total = total, left = left)
 
 @app.route('/islamic')
 def ideology():
-    return render_template('islamic.html', title='Islamic Terrorism Info')
+    ideology = Ideology()
+    total, islamic = ideology.islamic_info()
+    return render_template('islamic.html', title='Islamic Terrorism Info', total = total, islamic = islamic)
 
 #This line will actually run the app.
 app.run(debug=True)

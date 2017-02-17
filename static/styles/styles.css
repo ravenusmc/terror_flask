@@ -31,20 +31,22 @@ header {
 
 nav {
     float: left;
-    width: 200px;
+    width: 160px;
     font-weight: bold;
     letter-spacing: 0.1em;
+    padding: 20px 5px 0 20px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border-radius: 100px;
 }
 
 nav a {
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 0 10px;
     display: block;
     background-color: #B3C7E6;
     border-bottom: 1px solid #ffffff;
@@ -60,17 +62,30 @@ nav a:hover {
 }
 
 main {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: block;
-    overflow: auto;
+    background-color: #FFFFFF;
+    margin-left: 170px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 footer {
-    font-size: 70%
+    font-size: 70%;
     text-align: center;
     padding: 10px;
-    background-color: #869DC7;
+    background-color: #FFFFFF;
     clear: both;
+    margin-left: 170px;
+}
+
+/* CSS for Index Page */
+
+#warImage {
+    height: 300px;
+    background-size: 100% 100%;
+    margin-left: 170px;
+    background-repeat: no-repeat;
+	background-image: url("https://source.unsplash.com/Osd4ngHD4kM/255x200");
 }
