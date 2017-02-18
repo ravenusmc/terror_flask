@@ -35,6 +35,7 @@ nav {
     font-weight: bold;
     letter-spacing: 0.1em;
     padding: 20px 5px 0 20px;
+    text-decoration: none;
 }
 
 nav ul {
@@ -88,4 +89,16 @@ footer {
     margin-left: 170px;
     background-repeat: no-repeat;
 	background-image: url("https://source.unsplash.com/Osd4ngHD4kM/255x200");
+}
+
+/* CSS for Ideology page */
+
+.remove_underline {
+    text-decoration: none;
+}
+
+.test {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    overflow: hidden;
 }
