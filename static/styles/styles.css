@@ -102,3 +102,10 @@ footer {
     padding-bottom: 120px;
     overflow: hidden;
 }
+
+/* CSS for not_prev.html page */
+
+span {
+    text-transform: uppercase;
+    font-weight: bold;
+}

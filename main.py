@@ -44,11 +44,15 @@ def prev():
 
 @app.route('/prev')
 def prev_viewing():
-    return render_template('prevented.html', title='Prevented')
+    ideology = Ideology()
+    total, prevented = ideology.prevented()
+    return render_template('prevented.html', title='Prevented', total = total, prev = prevented)
 
 @app.route('/not_prev')
 def not_prev():
-    return render_template('not_prev.html', title='Not Prevented')
+    ideology = Ideology()
+    total, not_prevented = ideology.not_prevented()
+    return render_template('not_prev.html', title='Not Prevented', total = total, not_prev = not_prevented)
 
 #This line will actually run the app.
 app.run(debug=True)
