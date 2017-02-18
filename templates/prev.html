@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id='wrapper'>
+
+    <header>
+        <h1 class='center'>Prevented / Not Prevented Attacks</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="/">Home</a>&nbsp;
+            <a href="/ideology">Ideology</a>&nbsp;
+            <a href="activities.html">Victims Killed</a>&nbsp;
+            <a href="/prevented">Prevented Attacks</a>&nbsp;
+        </ul>
+    </nav>
+
+    <main class='test'>
+        <h3>Do you want to look at prevented or not prevented terrorism attacks:</h3>
+        <ol>
+            <li><a class='remove_underline' href="/prev">Prevented</a></li>
+            <li><a class='remove_underline' href="/not_prev">Not Prevented</a></li>
+        </ol>
+        <p>Please note, that the data starts sometime after 2001. Thus, the
+        information displayed here is not for all terrorism attacks in general.
+        </p>
+    </main>
+
+    <footer class='center'>
+        <p>Copyright &copy; 2017 Double Sun Productions</p>
+    </footer>
+
+</div>
+
+{% endblock %}

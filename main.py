@@ -37,5 +37,18 @@ def ideology():
     total, islamic = ideology.islamic_info()
     return render_template('islamic.html', title='Islamic Terrorism Info', total = total, islamic = islamic)
 
+#The following code is for prevented/not prevented attacks.
+@app.route('/prevented')
+def prev():
+    return render_template('prev.html', title='Prevented / Not Prevented')
+
+@app.route('/prev')
+def prev_viewing():
+    return render_template('prevented.html', title='Prevented')
+
+@app.route('/not_prev')
+def not_prev():
+    return render_template('not_prev.html', title='Not Prevented')
+
 #This line will actually run the app.
 app.run(debug=True)
