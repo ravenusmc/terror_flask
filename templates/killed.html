@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div id='wrapper'>
+
+    <header>
+        <h1 class='center'>Basic Terrorism Information</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="/">Home</a>&nbsp;
+            <a href="/ideology">Ideology</a>&nbsp;
+            <a href="activities.html">Victims Killed</a>&nbsp;
+            <a href="/prevented">Prevented Attacks</a>&nbsp;
+        </ul>
+    </nav>
+
+    <div id='warImage'>
+    </div>
+
+    <main>
+        <h3>Purpose</h3>
+            <p>The purpose of this site is to provide the user with some
+            basic information about terrorism. Also, it is to improve my
+            skills and knowledge of using Flask and Pandas together.</p>
+        <h3>About the Data</h3>
+            <p>The<a href='https://www.kaggle.com/newamerica/terrorist-activity'>
+            data</a> for this project was pulled from the website Kaggle.
+            </p>
+            <p>I will also say that this data has a lot of missing data in it. It
+            is far from perfect. This site is not so much designed to tell the user
+            about terrorism is that it is designed to help me learn to work with
+            Flask and Pandas.</p>
+            <p>Because of this, there are times when a total is broken up into
+            smaller components and those components will not add up to the total
+            </p>
+        <h3>About Me</h3>
+            <p>I have a background in history and political science as well as
+            a masters in International Relations. I served in the U.S. Marines
+            for eight years and then spent about five years in the intelligence
+            community. I am now attempting to become a web developer.
+            </p>
+    </main>
+
+    <footer class='center'>
+        <p>Copyright &copy; 2017 Double Sun Productions</p>
+    </footer>
+
+</div>
+
+{% endblock %}

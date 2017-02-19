@@ -54,5 +54,12 @@ def not_prev():
     total, not_prevented = ideology.not_prevented()
     return render_template('not_prev.html', title='Not Prevented', total = total, not_prev = not_prevented)
 
+#This code will be for the victims killed functions. It will allow the user to
+#look at terrorist attacks based on the number of victims killed.
+@app.route('/killed')
+def killed_work():
+    return render_template('prevented.html', title='Prevented', total = total, prev = prevented)
+
+
 #This line will actually run the app.
 app.run(debug=True)
