@@ -58,7 +58,7 @@ def not_prev():
 #look at terrorist attacks based on the number of victims killed.
 @app.route('/killed')
 def killed_work():
-    return render_template('prevented.html', title='Prevented', total = total, prev = prevented)
+    return render_template('killed.html', title='Prevented')
 
 
 #This line will actually run the app.
