@@ -60,6 +60,12 @@ def not_prev():
 def killed_work():
     return render_template('killed.html', title='Prevented')
 
+@app.route('/results', methods=['POST'])
+def results():
+    value = int(request.form['number'])
+    ideology = Ideology()
+    information = ideology.deaths(value)
+    return render_template('results_page.html', title="results", result = information)
 
 #This line will actually run the app.
 app.run(debug=True)

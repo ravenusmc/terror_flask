@@ -17,14 +17,16 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="fix_bottom">
         <p>Please enter in a value to look at terrorism attacks where that many
         or more victims died. Thus, the data returned will show the user the attacks
         that had that many victims and greater.</p>
-        <form method="POST" action=''>
+        <p>The information returned will be the terrorist attacks where that amount
+        of people died.</p>
+        <form method="POST" action='/results'>
             <table>
                 <p>Use this form to enter in the value that you will be looking at:</p>
-                <tr><td>Value: </td><td><input name='value' type='NUMBER' width='60'></td></tr>
+                <tr><td>Value: </td><td><input name='number' type='NUMBER' width='60'></td></tr>
             </table>
             <p>Click this button to submit:</p>
             <p><input value='Submit' type='SUBMIT'></p>

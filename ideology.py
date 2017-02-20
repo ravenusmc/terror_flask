@@ -42,3 +42,10 @@ class Ideology():
         total_attacks = len(self.__data)
         not_prevented = len(self.__data[self.__data.plot_status == 'Not Prevented'])
         return total_attacks, not_prevented
+
+    #This method will allow the user to see attacks were a certain number of
+    #people were killed.
+    def deaths(self, number_deaths):
+        self.__data = pd.read_csv('plots.csv')
+        information = self.__data[self.__data.victims_killed >= number_deaths]
+        return information

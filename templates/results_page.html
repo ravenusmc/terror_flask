@@ -5,7 +5,7 @@
 <div id='wrapper'>
 
     <header>
-        <h1 class='center'>Prevented / Not Prevented Attacks</h1>
+        <h1 class='center'>Results Page</h1>
     </header>
 
     <nav>
@@ -18,14 +18,8 @@
     </nav>
 
     <main class='fix_bottom'>
-        <h3>Do you want to look at prevented or not prevented terrorism attacks:</h3>
-        <ol>
-            <li><a class='remove_underline' href="/prev">Prevented</a></li>
-            <li><a class='remove_underline' href="/not_prev">Not Prevented</a></li>
-        </ol>
-        <p>Please note, that the data starts sometime after 2001. Thus, the
-        information displayed here is not for all terrorism attacks in general.
-        </p>
+        <h3>Here are your results:</h3>
+        <p>{{ result }}</p>
     </main>
 
     <footer class='center'>
