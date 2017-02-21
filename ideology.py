@@ -31,6 +31,8 @@ class Ideology():
         attacks = len(self.__data[self.__data.plot_ideology == data_type])
         return total_deaths, attacks
 
+    #The following two methods allow the user to look at prevented and attacks
+    #which were not prevented. 
     def prevented(self):
         self.__data = pd.read_csv('plots.csv')
         total_attacks = len(self.__data)
@@ -47,5 +49,14 @@ class Ideology():
     #people were killed.
     def deaths(self, number_deaths):
         self.__data = pd.read_csv('plots.csv')
-        information = self.__data[self.__data.victims_killed >= number_deaths]
-        return information
+        self.__data = self.__data[self.__data.victims_killed >= number_deaths]
+        plot = self.__data[[1]]
+        plot = plot.values
+        return plot
+
+
+#This is only for draft/testing purposes to make sure that my code works how
+#I want it to work.
+# idea =  Ideology()
+# plot = idea.deaths(45)
+# print(plot)

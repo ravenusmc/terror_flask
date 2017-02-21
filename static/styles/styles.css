@@ -109,3 +109,9 @@ span {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+/* CSS for results_page.html page */
+
+.results {
+    width: 250px;
+}
