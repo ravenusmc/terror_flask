@@ -22,20 +22,20 @@ def idea():
 @app.route('/right_wing')
 def right():
     ideology = Ideology()
-    total, right = ideology.right_wing_info()
-    return render_template('right.html', title='Right Wing Terrorism Info', total = total, right = right )
+    total, idealogy = ideology.ideology_info('Right Wing')
+    return render_template('right.html', title='Right Wing Terrorism Info', total = total, right = idealogy )
 
 @app.route('/left_wing')
 def left():
     ideology = Ideology()
-    total, left = ideology.left_wing_info()
-    return render_template('left.html', title='Left Wing Terrorism Info', total = total, left = left)
+    total, idealogy = ideology.ideology_info('Left Wing')
+    return render_template('left.html', title='Left Wing Terrorism Info', total = total, left = idealogy)
 
 @app.route('/islamic')
 def ideology():
     ideology = Ideology()
-    total, islamic = ideology.islamic_info()
-    return render_template('islamic.html', title='Islamic Terrorism Info', total = total, islamic = islamic)
+    total, idealogy = ideology.ideology_info('Jihadist')
+    return render_template('islamic.html', title='Islamic Terrorism Info', total = total, islamic = idealogy)
 
 #The following code is for prevented/not prevented attacks.
 @app.route('/prevented')
